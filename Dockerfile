@@ -5,3 +5,6 @@ COPY udev-rules/ /etc/udev/rules.d/
 COPY wpe-init /wpe-init
 
 CMD [ "/wpe-init" ]
+
+RUN rm /var/tmp
+RUN mkdir /var/tmp
